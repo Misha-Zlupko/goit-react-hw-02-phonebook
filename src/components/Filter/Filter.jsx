@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 export const Filter = ({ onChangeSearch, search }) => {
   return (
     <div>
@@ -6,4 +8,9 @@ export const Filter = ({ onChangeSearch, search }) => {
       </form>
     </div>
   );
+};
+
+Filter.propTypes = {
+  onChangeSearch: PropTypes.string.isRequired,
+  search: PropTypes.string.isRequired,
 };

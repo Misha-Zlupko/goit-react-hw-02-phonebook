@@ -1,8 +1,7 @@
 import { Component } from 'react';
+import PropTypes from 'prop-types';
 
 export class ContactForm extends Component {
-  // this.props.onSubmmit
-
   state = {
     name: '',
     number: '',
@@ -48,3 +47,7 @@ export class ContactForm extends Component {
     );
   }
 }
+
+ContactForm.protoType = {
+  onChange: PropTypes.string.isRequired,
+};

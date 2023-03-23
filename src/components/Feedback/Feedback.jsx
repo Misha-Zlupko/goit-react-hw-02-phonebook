@@ -20,11 +20,6 @@ export class Feedback extends Component {
     this.setState({ filter: value });
   };
 
-  handleInputChange = event => {
-    const { name, value } = event.currentTarget;
-    this.setState({ [name]: value });
-  };
-
   // heandleFilterUsers = () => {
   //   this.setState(prev => ({
   //     contacts: prev.contacts.filter(contact =>
@@ -39,7 +34,7 @@ export class Feedback extends Component {
 
   heandleSubmit = newContacts => {
     if (this.state.contacts.find(item => item.name === newContacts.name)) {
-      alert(newContacts);
+      alert(`${newContacts.name} is already in contacs`);
     } else {
       this.setState(prev => ({ contacts: [...prev.contacts, newContacts] }));
     }

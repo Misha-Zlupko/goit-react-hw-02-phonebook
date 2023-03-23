@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 export const ContactList = ({ contacts, onDeliteTodo }) => {
   return (
     <div>
@@ -13,4 +15,9 @@ export const ContactList = ({ contacts, onDeliteTodo }) => {
       </ul>
     </div>
   );
+};
+
+ContactList.protoType = {
+  contacts: PropTypes.array.isRequired,
+  onDeliteTodo: PropTypes.string.isRequired,
 };
