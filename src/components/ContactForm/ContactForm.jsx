@@ -48,6 +48,6 @@ export class ContactForm extends Component {
   }
 }
 
-ContactForm.protoType = {
-  onChange: PropTypes.string.isRequired,
+ContactForm.propTypes = {
+  onSubmmit: PropTypes.string.isRequired,
 };

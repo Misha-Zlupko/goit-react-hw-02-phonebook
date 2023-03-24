@@ -17,7 +17,7 @@ export const ContactList = ({ contacts, onDeliteTodo }) => {
   );
 };
 
-ContactList.protoType = {
+ContactList.propTypes = {
   contacts: PropTypes.array.isRequired,
   onDeliteTodo: PropTypes.string.isRequired,
 };
